@@ -12,12 +12,17 @@ code {
     monospace;
 }
 
-.level-selector {
-  background-color: orangered;
+.App {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande';
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-top: 100px;
 }
 
 .question-area {
   background-color: burlywood;
+  max-width: 500px;
 }
 
 .question-box {
@@ -25,6 +30,7 @@ code {
   padding: 10px;
   border-radius: 20px;
   margin: 10px;
+  width: 200px;
 }
 
 .question-buttons {
@@ -35,4 +41,33 @@ code {
 .question-button {
   display: flex;
   flex-direction: column;
+}
+
+.questions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+button {
+  margin: 5px;
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  background-color: darkcyan;
+  color: white;
+}
+
+button:disabled {
+  background-color: darkgray;
+  color: darkolivegreen;
+}
+
+select {
+  margin: 5px;
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  background-color: darkorchid;
+  color: white;
 }

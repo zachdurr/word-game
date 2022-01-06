@@ -14,7 +14,7 @@ app.get('/', (req, res) => {
 
 app.get('/words', (req, res) => {
     const chosenLevel = req.query.level
-    console.log(req)
+    
     const options = {
         method: 'GET',
         url: 'https://twinword-word-association-quiz.p.rapidapi.com/type1/',
